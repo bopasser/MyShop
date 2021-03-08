@@ -1,0 +1,87 @@
+VS 2017
+Creating MyShop solution
+Create Blank Solution
+	New Project
+	Other Type
+	Visual Studio Solution
+	Blank Solution
+	Name it MyShop and save where ever you want
+	
+
+Add Projects
+	Right click on solution
+	Add
+	New Project
+	Windows Desktop
+	Class Library (.net framework)
+	Name: MyShop.Core
+	OK
+	Delete the Class
+
+Repeat for
+	MyShop.Services
+	MyShop.DataAccess.SQL
+	MyShop.DataAccess.InMemory
+
+Add Web UI Project
+	Right Click on Solution
+	Add
+	New Project
+	Web
+	ASP.Net Web Application (.net framework)
+	Name: MyShop.WebUI
+	Click OK
+	When oresented with what type of web project
+	check MVC and Add Unit Tests
+	Change Authentication
+	Individual USer Accounts
+	Click OK
+
+This will Create two web projects
+	MyShop.WebUI
+	MyShop.WebUI.Tests
+
+
+Syncing to GitHub
+	Click Team Explorer Tab
+	Project: click changes
+	If Git User Information form pops up
+	enter bopasser and codegeek52@yahoo.com check Set in global.gitconfig
+	click Save
+
+	Enter Commit Message (why)
+	clcik commit All
+	this commits it to our local repository
+	clcick Sync
+	the form will change click Sync again
+	this checks the server to see if there are any changes on the server and merges them 	with our solution locally then uploads it to github server
+
+	can confirm by going to github.com
+	sign in
+	username: bopasser
+
+	email: codegeek52@yahoo.com
+
+	pwd: C0d3Rep0s!tory#
+
+	the project will be under your repositiories
+
+
+Create branches
+	back to Visual Studio
+	Team Explorer tab click the home button (looks like a house)
+	or click Main on the right side of the task bar
+	and select manage braches
+	click New Branch
+	name ot 1.BaseProject
+	click on create branch
+	it will create it locall but not on the server
+	click the Home Button
+	click Sync
+	click Push
+	back to solution explorer
+	look at github web, refresh the page and you should see two branches
+
+
+
+	
